@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --yellow: #f4d04e;
+  --gray-950: #111;
+  --gray-500: #6b6b6b;
+  --white: #fff;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Figtree", sans-serif;
+  line-height: 150%;
+}
+
+.card-container {
+  background-color: var(--yellow);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  width: 327px;
+  height: 501px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: 1px solid var(--gray-950);
+  filter: drop-shadow(10px 10px var(--gray-950));
+}
+
+.img-section {
+  width: 279px;
+  height: 200px;
+  background-image: url(assets/images/illustration-article.svg);
+  background-position: center;
+  border-radius: 10px;
+}
+
+.info-section {
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-section p {
+  font-size: 14px;
+}
+
+.info-section h3 {
+  font-size: 20px;
+}
+
+.info-section h3:hover{
+color: var(--yellow);
+cursor: pointer;
+}
+
+.topic {
+  display: block;
+  width: 76px;
+  font-weight: 900;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  padding: 4px;
+  justify-self: center;
+  text-align: center;
+}
+
+.presentation {
+  color: var(--gray-500);
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+}
+
+.author-name {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+
+.card{
+width: 384px;
+height: 522px;
+padding: 26px;
+
+}
+
+.img-section{
+    width: 100%;
+}
+
+.info-section{
+    height: 200px;
+}
+
+  
+  .info-section h3 {
+    font-size: 24px;
+  }
+
+  .info-section .presentation {
+    font-size: 16px;
+  }
+
+}
+
+/* footer / attribution sytles */
+
+.attribution {
+    display: none;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
